@@ -233,14 +233,12 @@ function popInfoWindow(markr,infowindow){
             }
             if(flag === false){
                 infowindow.setContent(
-                    '<div><h4 id="Title" class=".h4">' + markr.title +
-                    '</h4></div>' + '<div class="text-right" id="wiki-links"' + wikiElem +
+                    '<div><h4 id="Title" class=".h4">' + markr.title + '</h4></div>' + '<div class="text-right" id="wiki-links"' + wikiElem +
                     '<p></p></div>' + '<div id="pano"><span><i>View Not Found</i></span></div>'
                 );
             }else{
                 infowindow.setContent(
-                    '<div><h4 id="Title" class=".h4">' + markr.title +
-                    '</h4></div>' + '<div class="text-right" id="wiki-links"' + wikiElem +
+                    '<div><h4 id="Title" class=".h4">' + markr.title +'</h4></div>' + '<div class="text-right" id="wiki-links"' + wikiElem +
                     '<p></p></div>' + '<div id="pano">' + streetService.getPanoramaByLocation(markr.position, radii, getStreetView) +
                     '</div>'
                 );
