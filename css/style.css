@@ -1,0 +1,62 @@
+body{
+    background-color: #ff9800;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.logo{
+padding-top: 15px;
+border-radius: 50%;
+}
+
+.find{
+    height: 100%;
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    text-align: right;
+    background-color: #2196F3;
+}
+
+li{
+    border-bottom: 1px solid #ccc;
+    background: #cce5ff;
+    text-align: center;
+    margin: 5px;
+}
+.findComplete{
+    width: 100%;
+    border-color: black;
+    border-style: ridge;
+    border-width: 3px;
+}
+hr{
+    margin: 50px;
+    color: black;
+    border-color: black;
+}
+#map{
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    border: 10px;
+    border-color: black;
+}
+#wiki-links{
+    padding: 6px;
+    width: 200px;
+}
+#pano{
+    width: 200px;
+    height: 200px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #3399ff;
+    padding: 20px;
+}

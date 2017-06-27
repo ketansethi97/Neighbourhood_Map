@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Himachal Pradesh</title>
+    <meta charset="utf-8"></meta>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width= device-width ,initial-scale=1">
+</head>
+<body>
+ <div class="container">
+    <div class="row">
+        <div class="col-md-3 logo"><img class="img-responsive" src="img/log.png" alt="logo"></div>
+        <div class="col-md-9">
+            <h1 class="text-center">Himachal Pradesh</h1>
+        </div>
+        <div class="col-md-12"><hr></div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-3 ">
+            <div class="findComplete">
+                <span class="text">Find Nearby places</span>
+                <input type="text" id="places-find" data-bind="value: find" autocomplete="off" placeholder="Eg: Shopping malls in Himachal">
+                <input type="button" class="btn-primary" id="find-places" value="Find">
+            </div>
+            <ul data-bind="foreach: placeList" id="list-places" class="find">
+                <li data-bind="text: $data.title,click: $parent.CurrentPlace">
+                </li>
+            </ul>
+            <form class="form-horizontal find">
+                <input type="input" name="Find" data-bind="textinput: foundLocation">
+                <input type="button" class="btn-success" name="Filter" value="Filter">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/libs/jquery-3.1.1.min.js"></script>
+<script src="js/libs/knockout-3.2.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyDdGU0Fugxd61BIwXBQ6G5gP_0dpMhM2rQ&v=3&callback=initMap" onerror="displayError()"></script>
+</body>
+</html>
